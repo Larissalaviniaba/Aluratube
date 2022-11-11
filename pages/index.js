@@ -1,5 +1,6 @@
 import React from "react"
 import profile from "../config.json";
+import { CSSReset } from "../src/Components/CssReset";
 import Menu from "../src/Components/Menu/";
 import Timeline from "../src/components/Timeline";
 import Header from "../src/components/Header";
@@ -9,6 +10,7 @@ function HomePage() {
     const [valorDoFiltro, setValorDoFiltro] = React.useState('');
   return (
     <>
+      <CSSReset />
       <div
         style={{
           display: "flex",
