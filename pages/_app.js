@@ -18,12 +18,11 @@ const theme = {
     }
 };
 
-export default function MyApp(Component, pageProps){
-
-    return(
+export default function MyApp({ Component, pageProps }) {
+    return (
         <ThemeProvider theme={theme.light}>
-            <CSSReset />
+            <CSSReset /> 
             <Component {...pageProps} />
         </ThemeProvider>
     )
-}
+  }
